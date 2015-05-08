@@ -36,7 +36,7 @@ plot(sds$DateTime, sds$Voltage, type="l", xlab="datetime", ylab="Voltage")
 plot(sds$DateTime, sds$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering")
 lines(sds$DateTime, sds$Sub_metering_2, col = "red")
 lines(sds$DateTime, sds$Sub_metering_3, col = "blue")
-legend("topright", pch=1, legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"))
+legend("topright", lty=1, legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"))
 # 4rd
 plot(sds$DateTime, sds$Global_reactive_power, type="l", xlab="datetime", ylab="Global_reactive_power")
 dev.off()
